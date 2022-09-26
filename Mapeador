@@ -183,7 +183,6 @@ function Bbmap(){
         outm=$dir/$pasta/$line.fastq \
         outu=$dir/$pasta/"unmapped.fastq" \
         out=$dir/$pasta/'file'_$R1_.bam \
-        #covstats=$dir/$pasta/constats.txt \ #Cobertura
         rm -rf ref/
         gzip $dir/$pasta/$line.fastq 
         echo "Amostras $l1 e $l2                                                      "
@@ -191,9 +190,6 @@ function Bbmap(){
         echo "             Removendo Residuos                                         "
         echo "           Finalizado a Execucao                                        "
         echo "                                                                        "
-        #rm $dir/$pasta/unmapped.fastq
-        
     done
 }
 Construtor
-#pileup.sh in=mapped.bam out=stats.txt
